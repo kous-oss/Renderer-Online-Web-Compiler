@@ -1,0 +1,45 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.top-pane {
+  position: absolute;
+  height: 47%;
+  top: 0px;
+  width: inherit;
+  background-color: white;
+  padding: 0.5rem;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
+.bottom-pane {
+  position: absolute;
+  bottom: 0px;
+  height: 48%;
+  width: inherit;
+  background-color: #34eec6;
+  padding: 0.5rem;
+}
+
+.editor-container {
+  border: 1px solid black;
+  width: 31%;
+  background-color: gray;
+  overflow-y: scroll;
+}
+
+.editor-header {
+  padding: 0.5rem;
+  height: 12%;
+  font-size: large;
+  background-color: blanchedalmond;
+}
+
+.CodeMirror:first-of-type {
+  display: none;
+}
